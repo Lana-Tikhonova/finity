@@ -85,6 +85,10 @@ textarea {
   -o-transition: all 0.5s ease;
 }
 
+.section {
+  padding-top: 150px;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,7 +205,7 @@ header .offer {
 
 .search-block {
   position: absolute;
-  bottom: -0.5px;
+  bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -368,7 +372,7 @@ header .offer {
 
 .find-job {
   background: #F5FAFD;
-  padding-top: 150px;
+  padding-bottom: 130px;
 }
 
 .find-job .offer {
@@ -500,6 +504,158 @@ header .offer {
   color: #8C97AC;
 }
 
+.notification {
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+.notification-left {
+  position: relative;
+  width: 50%;
+}
+
+.notification-left__img {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);
+}
+
+.notification-sms__wrapper {
+  position: absolute;
+  height: 251px;
+  bottom: 141px;
+  right: 0;
+  -webkit-box-shadow: 0px 32px 84px rgba(14, 86, 124, 0.165308) inset;
+  box-shadow: 0px -113px 100px rgba(14, 86, 124, 0.1) inset;
+}
+
+.notification-sms {
+  background-color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  padding: 30px;
+  width: 360px;
+  height: 250px;
+}
+
+.notification-sms h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 5px;
+}
+
+.notification-sms p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #8C97AC;
+}
+
+.notification-sms .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notification-sms .company img {
+  margin-right: 10px;
+}
+
+.notification-sms .company h5 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #1D293F;
+  font-weight: 400;
+}
+
+.notification-sms .company h5 span {
+  font-weight: 700;
+  display: block;
+}
+
+.notification-sms__img {
+  position: absolute;
+  top: -28px;
+  right: -27px;
+  z-index: 2;
+}
+
+.separation {
+  margin: 17px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#E2E4E8), color-stop(75%, #E2E4E8), color-stop(75%, transparent), to(transparent));
+  background-image: linear-gradient(90deg, #E2E4E8, #E2E4E8 75%, transparent 75%, transparent 100%);
+  background-size: 20px 1px;
+  border: none;
+  height: 3px;
+}
+
+.notification-right {
+  width: 43%;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.notification-right h2 {
+  margin: 20px 0 36px;
+}
+
+.notification-right span {
+  font-size: 16px;
+  line-height: 20px;
+  color: #F77321;
+}
+
+.notification-right P {
+  font-size: 18px;
+  line-height: 32px;
+  color: #7C8087;
+}
+
+.subscribe-block {
+  background-color: #fff;
+  height: 60px;
+  width: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+
+.subscribe-block .subscribe {
+  height: 100%;
+  width: 70%;
+  padding: 10px 80px;
+  position: relative;
+  border: 1px solid #8c97ac42;
+}
+
+.subscribe-block .subscribe input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.subscribe-block .subscribe:after {
+  content: url(../img/email.svg);
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -9px;
+  left: 54px;
+}
+
+.subscribe-block .submit {
+  margin-left: auto;
+  width: 30%;
+  height: 100%;
+}
+
+.subscribe-block .submit a {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .job-item {
     padding: 30px;
@@ -510,9 +666,43 @@ header .offer {
   .job-item_top .type {
     font-size: 12px;
   }
+  .notification-right {
+    width: 45%;
+  }
+  .notification-sms__wrapper {
+    right: -7px;
+  }
+  .subscribe-block {
+    width: 430px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .notification-left__img {
+    width: 100%;
+  }
+  .notification-sms {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    width: 296px;
+    height: 246px;
+  }
+  .notification-sms__wrapper {
+    bottom: 87px;
+    height: 246px;
+  }
+  .subscribe-block {
+    width: 100%;
+  }
+  .subscribe-block .subscribe {
+    padding: 10px 35px;
+  }
+  .subscribe-block .subscribe:after {
+    left: 7px;
+  }
+  .find-job {
+    padding-bottom: 80px;
+  }
   .navigation .menu {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -559,8 +749,7 @@ header .offer {
   h2 {
     font-size: 50px;
   }
-  .category,
-  .find-job {
+  .section {
     padding-top: 100px;
   }
   .job-item {
@@ -572,11 +761,31 @@ header .offer {
 }
 
 @media screen and (max-width: 768px) {
+  .notification-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .notification-right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .notification-left__img {
+    width: 350px;
+  }
+  .notification-sms__wrapper {
+    right: -85px;
+  }
+  .notification .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .navigation .submit {
     display: none;
-  }
-  .search-block {
-    bottom: 0;
   }
   .search-block .search {
     padding: 10px 35px;
@@ -621,6 +830,15 @@ header .offer {
 }
 
 @media screen and (max-width: 576px) {
+  .notification-left {
+    width: 100%;
+  }
+  .notification-sms__wrapper {
+    right: 0;
+  }
+  .find-job {
+    padding-bottom: 40px;
+  }
   .navigation .menu li {
     padding-right: 25px;
   }
@@ -656,8 +874,7 @@ header .offer {
   .category-slider .slick-track {
     padding-bottom: 17px;
   }
-  .category,
-  .find-job {
+  .section {
     padding-top: 45px;
   }
   .category-slider__item {
@@ -677,6 +894,40 @@ header .offer {
 }
 
 @media screen and (max-width: 440px) {
+  .notification-left__img {
+    width: 100%;
+  }
+  .notification-sms__img {
+    width: 45px;
+    top: -22px;
+    right: -18px;
+  }
+  .notification-sms__wrapper {
+    right: 10px;
+    height: 180px;
+    bottom: 61px;
+  }
+  .notification-right {
+    margin-top: 0;
+  }
+  .notification-sms {
+    width: 244px;
+    height: 180px;
+  }
+  .notification-sms h3 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .notification-sms .company h5 {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .notification-sms .company img {
+    width: 30px;
+  }
+  .separation {
+    margin: 10px 0;
+  }
   .navigation .menu {
     display: none;
   }
